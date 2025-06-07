@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: ${DESIGN_SERVICE_DB_URL}
+    username: ${DESIGN_SERVICE_DB_USER}
+    password: ${DESIGN_SERVICE_DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-master.yaml
+    default-schema: design
