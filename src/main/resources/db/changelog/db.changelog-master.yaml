@@ -5,3 +5,5 @@ databaseChangeLog:
       file: db/changelog/scripts/02-ADD-ROLES.sql
   - include:
       file: db/changelog/scripts/03-DROP-TABLES-AND-ALTER-USER.sql
+  - include:
+      file: db/changelog/scripts/04-CREATE-QUESTIONS-TABLES.sql
