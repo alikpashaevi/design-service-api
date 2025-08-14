@@ -14,6 +14,10 @@ public class QuestionService {
 
     private final QuestionRepo questionRepo;
 
+    public Question getQuestionById(long id) {
+        return questionRepo.findById(id).orElseThrow(null);
+    }
+
     public List<Question> getAllQuestions() {
         return questionRepo.findAll();
     }
