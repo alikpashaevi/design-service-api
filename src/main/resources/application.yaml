@@ -7,3 +7,14 @@ spring:
   liquibase:
     change-log: classpath:/db/changelog/db.changelog-master.yaml
     default-schema: design
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${DESIGN-SERVICE-EMAIL}
+    password: ${DESIGN-SERVICE-APP-PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true

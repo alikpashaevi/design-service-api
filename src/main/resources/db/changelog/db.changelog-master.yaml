@@ -7,3 +7,5 @@ databaseChangeLog:
       file: db/changelog/scripts/03-DROP-TABLES-AND-ALTER-USER.sql
   - include:
       file: db/changelog/scripts/04-CREATE-QUESTIONS-TABLES.sql
+  - include:
+      file: db/changelog/scripts/05-CREATE-EMAIL-VERIFICATION-TABLE.sql
